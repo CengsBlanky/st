@@ -5,15 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "ComicMono:pixelsize=31:antialias=true:autohint=true";
+static char *font = "SauceCodePro:pixelsize=30:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-    "PingFang SC:pixelsize=31:antialias=true:autohint=true",
-    "PingFang TC:pixelsize=31:antialias=true:autohint=true",
-    "PingFang HK:pixelsize=31:antialias=true:autohint=true",
-    "TsangerJinKai05:pixelsize=31:antialias=true:autohint=true",
+    "Noto Color Emoji:pixelsize=30:antialias=true:autohint=true",
+    "TsangerJinKai05:pixelsize=30:antialias=true:autohint=true",
 };
-static int borderpx = 2;
+static int borderpx = 1;
 
 /**
  * Undercurl style. Set UNDERCURL_STYLE to one of the available styles.
