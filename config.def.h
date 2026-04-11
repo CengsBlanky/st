@@ -5,12 +5,42 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "IosevkaZeng:pixelsize=23:antialias=true:autohint=true";
+static char *font = "ComicMono:pixelsize=28:antialias=true:autohint=true";
+/* Spare fonts */
+static char *font2[] = {
+    "PingFang SC:pixelsize=28:antialias=true:autohint=true",
+    "PingFang TC:pixelsize=28:antialias=true:autohint=true",
+    "PingFang HK:pixelsize=28:antialias=true:autohint=true",
+    "TsangerJinKai05:pixelsize=28:antialias=true:autohint=true",
+};
 static int borderpx = 2;
 
+/**
+ * Undercurl style. Set UNDERCURL_STYLE to one of the available styles.
+ *
+ * Curly: Dunno how to draw it *shrug*
+ *  _   _   _   _
+ * ( ) ( ) ( ) ( )
+ *	 (_) (_) (_) (_)
+ *
+ * Spiky:
+ * /\  /\   /\	/\
+ *   \/  \/	  \/
+ *
+ * Capped:
+ *	_     _     _
+ * / \   / \   / \
+ *    \_/   \_/
+ */
+// Available styles
+#define UNDERCURL_CURLY 0
+#define UNDERCURL_SPIKY 1
+#define UNDERCURL_CAPPED 2
+// Active stlye
+#define UNDERCURL_STYLE UNDERCURL_SPIKY
+
 /*
- * What program is execed by st depends of these precedence rules:
- * 1: program passed with -e
+ * What program is execed by st depends of these precedence rules: * 1: program passed with -e
  * 2: scroll and/or utmp
  * 3: SHELL environment variable
  * 4: value of shell in /etc/passwd
@@ -475,3 +505,14 @@ static char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
 	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
+
+/*
+ * Open urls starting with urlprefixes, contatining urlchars
+ * by passing as ARG1 to urlhandler.
+ */
+char* urlhandler = "xdg-open";
+char urlchars[] =
+	"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	"abcdefghijklmnopqrstuvwxyz"
+	"0123456789-._~:/?#@!$&'*+,;=%";
+char* urlprefixes[] = {"http://", "https://", NULL};
