@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "ComicMono:pixelsize=28:antialias=true:autohint=true";
+static char *font = "ComicMono:pixelsize=30:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
     "PingFang SC:pixelsize=28:antialias=true:autohint=true",
