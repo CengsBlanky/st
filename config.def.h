@@ -5,13 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "ComicMono:pixelsize=30:antialias=true:autohint=true";
+static char *font = "ComicMono:pixelsize=31:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-    "PingFang SC:pixelsize=28:antialias=true:autohint=true",
-    "PingFang TC:pixelsize=28:antialias=true:autohint=true",
-    "PingFang HK:pixelsize=28:antialias=true:autohint=true",
-    "TsangerJinKai05:pixelsize=28:antialias=true:autohint=true",
+    "PingFang SC:pixelsize=31:antialias=true:autohint=true",
+    "PingFang TC:pixelsize=31:antialias=true:autohint=true",
+    "PingFang HK:pixelsize=31:antialias=true:autohint=true",
+    "TsangerJinKai05:pixelsize=31:antialias=true:autohint=true",
 };
 static int borderpx = 2;
 
