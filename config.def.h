@@ -35,10 +35,11 @@ static int borderpx = 1;
 #define UNDERCURL_SPIKY 1
 #define UNDERCURL_CAPPED 2
 // Active stlye
-#define UNDERCURL_STYLE UNDERCURL_SPIKY
+#define UNDERCURL_STYLE UNDERCURL_CURLY
 
 /*
- * What program is execed by st depends of these precedence rules: * 1: program passed with -e
+ * What program is execed by st depends of these precedence rules:
+ * 1: program passed with -e
  * 2: scroll and/or utmp
  * 3: SHELL environment variable
  * 4: value of shell in /etc/passwd
