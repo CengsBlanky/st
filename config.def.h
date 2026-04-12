@@ -35,7 +35,7 @@ static int borderpx = 1;
 #define UNDERCURL_SPIKY 1
 #define UNDERCURL_CAPPED 2
 // Active stlye
-#define UNDERCURL_STYLE UNDERCURL_CURLY
+#define UNDERCURL_STYLE UNDERCURL_CAPPED
 
 /*
  * What program is execed by st depends of these precedence rules:
